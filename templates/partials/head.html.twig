@@ -1,0 +1,36 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+    
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+    
+    <link rel="shortcut icon" href="{{ theme_url }}/assets/img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="{{ theme_url }}/assets/img/favicon.ico" type="image/x-icon" />
+
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://assets/css/admin.css', 4) %}
+        {% do assets.addCss('theme://assets/css/vendors.css', 3) %}
+        {% do assets.addCss('theme://assets/css/print.css', 1) %}
+        {% do assets.addCss('theme://assets/css/custom.css', 2) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://assets/js/main.min.js', 97) %}
+        {% do assets.addJs('theme://assets/js/vendors.min.js', 99) %}
+        {% do assets.addJs('theme://assets/js/polyfills.min.js', 98) %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head %}
+</head>

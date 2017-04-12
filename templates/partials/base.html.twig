@@ -1,0 +1,139 @@
+{% include 'partials/head.html.twig' %}
+
+
+<body class="{{ page.header.body_classes }}">
+<div class="container container-main">
+
+        {% include 'partials/header.html.twig' %}
+    
+{% include 'partials/navigation.html.twig' %}
+    
+    <div class="container-fluid hidden-xs">
+	<div class="row">
+		<div class="col-sm-12">
+			<h2 id="br1" class="hidden">Breadcrumbs</h2>
+			<ol class="breadcrumb" role="navigation" aria-labelledby="br1">
+				<li><a href="{{ page.find('/home').url() }}">{{ "BABS.STARTPAGE"|t }}</a><span class="icon icon--greater"></span></li>
+				
+			
+				
+				<li class="active" aria-selected="true">{{ "BABS.TEST_LANG"|t }}</li>
+			</ol>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid">
+      <div class="row">
+                  <div class="col-sm-4 col-md-3 drilldown">
+            <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs" role="tab" aria-selected="false" aria-expanded="false" id="ui-collapse-648">Sub-Navigation</a>
+            <div class="drilldown-container">
+              <nav class="nav-page-list" role="navigation" id="secondary-navigation">
+                <ul>
+                  <li class="list-emphasis">
+                    
+                    <ul>
+                        
+                      <li><a href="{{ page.find('/home').url() }}">{{ "BABS.VERSION_NEXT"|t }}</a></li>
+                      <li><a href="{{ page.find('/version-morgen').url() }}">{{ "BABS.VERSION_TOM"|t }}</a></li>
+                        <li><a href="{{ page.find('/version-heute').url() }}">{{ "BABS.VERSION_TOD"|t }}</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+
+            </div>
+          </div>
+                <div class="col-sm-8 col-md-9" id="content">
+          <div class="row">
+              <div class="col-md-8">
+      <div class="visible-xs visible-sm">
+        <p><a href="#context-sidebar" class="icon icon--before icon--root hidden-print">Context sidebar</a></p>
+      </div>
+      <a href="#" onclick="$.printPreview.printPreview()" class="hidden-xs icon icon--before icon--print pull-right" title="print"></a>
+
+      {% block content %}
+        
+                {% endblock %}
+                  
+                  
+      <!-- End Page Link -->
+      <p><small class="hidden-print"><a href="#" class="icon icon--before icon--power">{{ "BABS.TOTOP"|t }}</a></small></p>
+
+  </div>
+                          <div class="col-md-4">
+
+                <!-- Contextual information -->
+                <a name="context-sidebar" class="hidden-print"></a>
+
+                <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active" role="presentation"><a href="#contact" data-toggle="tab" role="tab" id="ui-tab-193" tabindex="0" aria-selected="true" aria-controls="contact">{{ "BABS.CONTACT"|t }}</a></li>
+                  </ul>
+
+                  <!-- Tab panes -->
+                  <div class="tab-content tab-border">
+                    <div class="tab-pane active" id="contact" role="tabpanel" aria-hidden="false" aria-labelledby="ui-tab-193">
+                      <div data-print="contact-info" data-title="Contact">
+                        <address itemprop="address" itemscope="itemscope" itemtype="http://data-vocabulary.org/Address">
+                          <strong itemprop="name">{{ "BABS.DEPART"|t }}</strong>
+                          <span>Kommunikation</span><br>
+                          <span itemprop="street-address">Monbijoustrasse 51A</span><br>
+                          <span itemprop="locality">{{ "BABS.BERN"|t }}</span><br>
+                          <span itemprop="country-name">{{ "BABS.SWISS"|t }}</span>
+                        </address>
+                        <dl class="dl-horizontal">
+                          <dt><abbr title="Phone">Tel.</abbr></dt>
+                          <dd><a href="tel:+41 58 462 55 83">+41 58 462 55 83</a></dd>
+                            <dt>Fax</dt>
+                          <dd>+41 58 462 59 89</dd>
+                        </dl><br>
+                        <p>
+                          <a href="mailto:info@babs.admin.ch" class="icon icon--before icon--message">E-Mail</a>
+                        </p>
+                          <br>
+                          <strong>{{ "BABS.TEMP"|t }}</strong><br>
+                          <br>
+                          <p>
+                          {{ "BABS.TEMP_1"|t }}<br>
+                              {{ "BABS.TEMP_2"|t }}<br>
+                              {{ "BABS.TEMP_3"|t }}
+                          </p>
+                      </div>
+                      <p class="hidden-xs"><a href="#" onclick="$.printPreview.printPreview('contact-info')" class="icon icon--before icon--print">{{ "BABS.PRT_CONTACT"|t }}</a></p>
+                    </div>
+                  </div>
+                  
+                  
+                  
+              </div>
+                      </div>
+        </div>
+      </div>
+    </div>
+<footer>
+
+      <div class="container-fluid footer-service">
+        <h3>{{ "BABS.DEPART"|t }}</h3>
+      </div>
+
+      <address>
+        <span class="hidden-xs">{{ "BABS.DEPART"|t }}</span>
+      </address>
+    </footer>
+
+
+  </div>
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-97206628-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+</body>

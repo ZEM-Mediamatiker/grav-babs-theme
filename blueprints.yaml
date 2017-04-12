@@ -1,0 +1,14 @@
+name: Grav BABS Theme
+version: 1.0
+description: Grav Theme für den Babs-Sirenentest im Design des CD Bund
+icon: plus-square
+author:
+  name: Zentrum elektronische Medien
+  email: zem.medienagentur@vtg.admin.ch
+homepage: https://github.com/zentrum-elektronische-medien/grav-theme-babs
+demo: https://babs.zem.ch
+keywords: Zentrum elektronische Medien, Bundesamt für Bevölkerungsschutz, Grav, Theme
+bugs: https://github.com/zentrum-elektronische-medien/grav-theme-babs/issues
+readme: https://github.com/zentrum-elektronische-medien/grav-theme-babs/blob/develop/README.md
+license: MIT
+
