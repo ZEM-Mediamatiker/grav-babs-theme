@@ -1,7 +1,7 @@
 ![Grav BABS theme](thumbnail.jpg)
 
 
-Version: 1.0 _(12.04.2017)_
+Version: 1.0.1 _(21.04.2017 - see changelog for details)_
 
 ---
 
