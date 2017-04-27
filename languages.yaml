@@ -19,7 +19,7 @@ de:
     TOTOP: "Zum Seitenanfang"
     BREAD_BR: "Der Bundesrat admin.ch"
     URL_BR: "http://www.admin.ch"
-    BREAD_BV: "Bundesverwaltung"
+    BREAD_BV: "Der Bundesrat"
     BREAD_BK: "BK: Schweizersiche Bundeskanzlei"
     URL_BK: "http://www.bk.admin.ch/"
     BREAD_EDA: "EDA: Eidgenössisches Departement für auswärtige Angelegenheiten"
@@ -76,8 +76,8 @@ fr:
     VERSION_TOM: 'Version "demain"'
     VERSION_TOD: 'Version "aujourd hui"'
     TOTOP: "Début de page"
-    BREAD_BR: "Le Conseil fédéral"
-    BREAD_BV: "Chancellerie fédérale (Chf)"
+    BREAD_BR: "Le Conseil fédéral admin.ch"
+    BREAD_BV: "Le Conseil fédéral"
     BREAD_BK: "Chf: Chancellerie fédérale"
     BREAD_EDA: "Département fédéral des affaires étrangères (DFAE)"
     BREAD_EDI: "Département fédéral de l'intérieur (DFI)"
@@ -116,8 +116,8 @@ it:
     VERSION_TOM: 'Versione "domani"'
     VERSION_TOD: 'Versione "oggi"'
     TOTOP: "Vai all'inizio della pagina"
-    BREAD_BR: "Il Consiglio federale"
-    BREAD_BV: "Amministrazione federale"
+    BREAD_BR: "Il Consiglio federale admin.ch"
+    BREAD_BV: "Il Consiglio federale"
     BREAD_BK: "Cancelleria federale (Caf)"
     BREAD_EDA: "Dipartimento federale degli affari esteri (DFAE)"
     BREAD_EDI: "Dipartimento federale dell'interno (DFI)"

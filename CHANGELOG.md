@@ -1,3 +1,10 @@
+# v1.0.2
+###  27.04.2017
+
+* added search field & serach results page
+* changed from sub-navigation to hamburger menu in mobile view
+* header logo is now linking back to home page
+
 # v1.0.1
 ###  21.04.2017
 

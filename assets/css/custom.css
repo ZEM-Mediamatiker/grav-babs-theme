@@ -11,6 +11,14 @@ body {
     color: #606d6e;
 }
 
+.nav-mobile .dropdown-menu {
+    margin-top: 5px;
+    left: 0;
+}
+yamm .dropdown-menu{
+    left: 0;
+}
+
 h1,
 h2,
 h3,
@@ -178,4 +186,32 @@ blockquote {
 
 .content-text h1{
     /*display: inline;*/
+}
+
+.dropdown-menu .form-horizontal{
+    width: 100%;
+}
+
+.dropdown-menu input{
+    width: 100%;
+}
+
+.search-padding{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.dropdown-menu input:focus{
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 767px){
+    .sidebarnav{
+        display: none;
+    }
+    
+    .nav-mobile .nav-page-list li.active{
+        padding-bottom: 10px;
+    }
 }

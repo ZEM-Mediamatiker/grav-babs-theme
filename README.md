@@ -1,7 +1,7 @@
 ![Grav BABS theme](thumbnail.jpg)
 
 
-Version: 1.0.1 _(21.04.2017 - see changelog for details)_
+Version: 1.0.2 _(27.04.2017 - see changelog for details)_
 
 ---
 
@@ -22,7 +22,10 @@ Simply copy the `grav-babs-theme` folder in to your Grav `user/themes` folder an
 pages:
   theme: grav-babs-theme
 ```
-That`s it.  
+That`s it. 
+
+### Add search functionality
+In order to make the search field working, you need to install the Grav `Simple Search` plugin. Define a category in which the plugin searches and add this category to all your pages that should be searchable.
 
 # Issues
 Found an issue? Report it using the issues on this repo. Thanks for your contibution.
