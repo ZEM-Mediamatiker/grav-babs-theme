@@ -214,4 +214,29 @@ blockquote {
     .nav-mobile .nav-page-list li.active{
         padding-bottom: 10px;
     }
+    
+    .mobile-searchicon{
+        padding-right: 15px;
+    }
+}
+
+/* Firefox */
+@-moz-document url-prefix() {
+    .mobile-searchicon{
+        padding-right: 0px;
+    }
+}
+
+/* IE 10 & 11 */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .mobile-searchicon{
+        padding-right: 0px;
+    }
+}
+
+/* IE Edge */ 
+@supports (-ms-accelerator:true) {
+  .mobile-searchicon{
+        padding-right: 0px;
+    }
 }

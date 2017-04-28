@@ -1,3 +1,8 @@
+# v1.0.3
+###  28.04.2017
+
+* fixed search icon on mobile
+
 # v1.0.2
 ###  27.04.2017
 
